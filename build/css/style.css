@@ -67,3 +67,11 @@ main{
     font-weight: lighter;
     font-family: var(--font-family-name);
 }
+
+#tech-stack p{
+    font-family: var(--font-family-hero);
+}
+
+#stacks :nth-child(n){
+    transform: scale(0.6);
+}
