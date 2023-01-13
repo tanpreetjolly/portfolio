@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body class="dark:bg-zinc-900 bg-white min-w-full text-white flex flex-col">
+    <header class="p-2 flex justify-center fixed min-w-full h-24 text-gray-300 text-lg  ">
+        <div class="header-hero w-4/5 flex items-center justify-between ">
+            <img id="logo" src="img/logo.jpg" alt="logo" class="block h-full"/>
+            <nav id="navbar" class="flex gap-8 text-xl">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Tech Stack</a>
+                <a href="">Projects</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="min-h-screen flex flex-col">
+        <section id="hero" class="min-w-full flex flex-col justify-center items-center">
+            <div id="hero-wrap" class="flex justify-between">
+            <div id="intro" class="flex flex-col justify-center">
+                <h1 class="text-4xl">Hi,</h1>
+                <h1 class="text-4xl">My name is</h1>
+                <h1 id="name" class="text-7xl pt-1 pb-1">Tanpreet Jolly</h1>
+                <p class="text-5xl pt-3">I build things for web!</p>
+                <button id="contactMe" class="h-14 w-60 text-center text-2xl p-2 mt-5 to-transparent">CONTACT ME</button>
+            </div>
+            <img src="img/hero-img.png" alt="" srcset="" class="block mb-12">
+            </div>
+        </section>
+        <section id="tech-stack" class="flex flex-col items-center"> 
+            <h1 class="text-5xl" id="tech-stack-caption">My Tech Stack</h1>
+            <p class="text-xl text-gray-300 pt-3">Technologies I've been working with currently</p>
+        </section>
+    </main>
+    <footer class="border-yellow-200 border-2 min-w-full h-14"></footer>
+</body>
+</html>

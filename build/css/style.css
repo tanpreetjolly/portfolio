@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+:root{
+    --font-family-header :'Noto Sans', sans-serif;
+    --font-family-hero : 'Montserrat', sans-serif;
+    --font-family-name : 'Ubuntu', sans-serif;
+    --background-purple : #5E42F6;
+    --button-background-color : #8fbaff;
+}
+
+header{
+    font-family: var(--font-family-header);
+    min-height: 12vh;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+main{
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+
+#hero{
+    /* background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom; */
+    min-height: 92vh;
+    font-family: var(--font-family-hero);
+}
+
+#hero-wrap{
+    min-width: 65vw;
+}
+
+#name{
+    font-family: var(--font-family-name);
+}
+
+#tech-stack{
+    /* background: var(--background-purple); */
+    min-height: 50vh;
+    /* margin-left: 2px; */
+}
+
+#name{
+    background: rgb(66,148,246);
+    background: linear-gradient(287deg, rgba(66,148,246,1) 6%, rgba(32,105,171,1) 50%, rgba(35,255,245,1) 99%);
+    background-size: cover;
+    /* background-repeat: repeat; */
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+    -webkit-background-clip: text;
+}
+
+#contactMe {
+    border: 2px solid var(--button-background-color);
+    font-family: var(--font-family-name);
+    color: var(--button-background-color);
+    border-radius: 28px;
+}
+
+#tech-stack-caption{
+    font-weight: lighter;
+    font-family: var(--font-family-name);
+}
