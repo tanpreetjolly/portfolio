@@ -8,6 +8,7 @@
     --font-family-name : 'Ubuntu', sans-serif;
     --background-purple : #5E42F6;
     --button-background-color : #8fbaff;
+    --background: rgba(89, 0, 255, 0.553);
 }
 
 header{
@@ -15,6 +16,7 @@ header{
     min-height: 12vh;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
+    
 }
 
 main{
@@ -74,4 +76,17 @@ main{
 
 #stacks :nth-child(n){
     transform: scale(0.6);
+}
+
+
+#projects-heading{
+    font-family: var(--font-family-name);
+}
+
+#project-container:nth-child(n){
+    border-radius: 5px;
+}
+
+#project-card{
+    
 }

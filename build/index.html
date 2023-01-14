@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./projects.js"></script>
     <title>Portfolio</title>
 </head>
 <body class="dark:bg-zinc-900 bg-white min-w-full text-white flex flex-col">
-    <header class="p-2 flex justify-center fixed min-w-full h-24 text-gray-300 text-lg  ">
-        <div class="header-hero w-4/5 flex items-center justify-between ">
+    <header class="p-2 flex justify-center fixed min-w-full h-24 text-gray-300 text-lg z-10 top-0">
+        <div class="header-hero w-4/5 flex items-center justify-between">
             <img id="logo" src="img/logo.jpg" alt="logo" class="block h-full"/>
             <nav id="navbar" class="flex gap-8 text-xl">
                 <a href="">Home</a>
@@ -23,21 +24,23 @@
     </header>
     <main class="min-h-screen flex flex-col min-w-full">
         <section id="hero" class="min-w-full flex flex-col justify-center items-center">
-            <div id="hero-wrap" class="flex justify-between">
-            <div id="intro" class="flex flex-col justify-center">
-                <h1 class="text-4xl">Hi,</h1>
-                <h1 class="text-4xl">My name is</h1>
-                <h1 id="name" class="text-7xl pt-1 pb-1">Tanpreet Jolly</h1>
-                <p class="text-5xl pt-3">I build things for web!</p>
-                <button id="contactMe" class="h-14 w-60 text-center text-2xl p-2 mt-5 to-transparent">CONTACT ME</button>
-            </div>
-            <img src="img/hero-img.png" alt="" srcset="" class="block mb-12">
+            <div id="hero-wrap" class="flex gap-16 justify-center">
+                <div id="intro" class="flex flex-col justify-min-[h]:40vh">
+                    <h2 class="text-4xl">Hi,</h1>
+                    <h2 class="text-4xl">My name is</h1>
+                    <h3 id="name" class="text-7xl pt-1 pb-1">Tanpreet Jolly</h1>
+                    <p class="text-5xl pt-3">I build things for web!</p>
+                    <button id="contactMe" class="h-14 w-60 text-center text-2xl p-2 mt-5 to-transparent">CONTACT ME</button>
+                </div>
+                <figure class="flex flex-col justify-center">
+                <img src="img/hero-img.png" alt="" srcset="" class="block max-w-xs">
+                </figure>
             </div>
         </section>
         <section id="tech-stack" class="flex flex-col items-center min-[h]:70vh min-w-full"> 
             <h1 class="text-5xl" id="tech-stack-caption">My Tech Stack</h1>
             <p class="text-2xl text-gray-300 pt-5 ">Technologies I've been working with currently</p>
-            <figure id="stacks" class="grid grid-rows-2 grid-flow-col w-3/4 p-5 place-content-center gap-x-9">
+            <div id="stacks" class="grid grid-rows-2 grid-flow-col w-3/4 p-5 place-content-center gap-x-9 z-0">
                 <img src="img/html.png" alt="">
                 <img src="img/css.png" alt="">
                 <img src="img/js.png" alt="">
@@ -46,10 +49,21 @@
                 <img src="img/vs.png" alt="">
                 <img src="img/git-hub.png" alt="">
                 <img src="img/sass.png" alt="">
-            </figure>
+            </div>
         </section>
-        <section id="projects" class="flex gap-10 border-2 border-fuchsia-600 min-w-full ">
-        apple
+        <section id="projects" class="flex flex-col gap-10  min-w-full min-h-screen p-5 items-center justify-center relative">
+            <div id="caption-projects" class="text-center z-10">
+            <p class="text-5xl" id="projects-heading">
+                My Projects
+            </p>
+            <p class="text-2xl text-gray-300">Things I've built so far</p>
+        </div>
+            <div id="project-container" class="flex flex-wrap min-w-full justify-center gap-5">
+                <div class="project-card"></div>
+                <div class="project-card"></div>
+                <div class="project-card"></div>
+                <div class="project-card"></div>
+            </div>
         </section>
     </main>
     <footer class="border-yellow-200 border-2 min-w-full h-14"></footer>
