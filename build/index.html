@@ -37,7 +37,7 @@
             <p class="pt-3 text-5xl">I build things for web!</p>
             <button
               id="contactMe"
-              class="mt-5 h-14 w-60 to-transparent p-2 text-center text-2xl"
+              class="mt-5 h-14 w-60 rounded-3xl border-2 to-transparent p-2 text-center text-2xl"
             >
               CONTACT ME
             </button>
@@ -61,15 +61,17 @@
         </div>
         <div class="aboutCard min-h-full w-4/6">
           <p class="text-2xl text-gray-300">
-            Hello, my name is Tanpreet, a frontend development enthusiast based
+            Hello, my name is Tanpreet, an aspiring frontend developer based
             out of New Delhi. I am currently a 2nd-year student pursuing
-            Computer Science at <span class="font-bold"></span>MAIT, Delhi</span>. I have been learning web
-            development for the past 3 months and have a strong understanding of
-            <span class="font-bold">HTML, CSS, JavaScript, and Tailwind CSS</span>. I have been working on
-            personal projects and have a passion for creating visually appealing
-            and user-friendly websites. I am eager to continue to learn and grow
-            as a developer and excited to bring my skills to any opportunity
-            that comes my way.
+            Computer Science at <span class="font-bold">MAIT, Delhi</span>. I
+            have been learning web development for the past 3 months and have a
+            strong understanding of
+            <span class="font-bold"
+              >HTML, CSS, JavaScript, and Tailwind CSS</span
+            >. I have been working on personal projects and have a passion for
+            creating visually appealing and user-friendly websites. I am eager
+            to continue to learn and grow as a developer and excited to bring my
+            skills to any opportunity that comes my way.
           </p>
         </div>
         <div class="w-4/6">
@@ -122,11 +124,36 @@
           <div class="project-card"></div>
         </div>
       </section>
-      <section id="contact" class="border-2 border-red-400 min-w-full flex justify-center mt-24 p-6">
-        <h2 class="text-5xl">Contact Me</h2>
-        
+      <section
+        id="contact"
+        class="min-h-screen flex w-full flex-col justify-center items-center  p-6"
+      >
+      <h2 class="text-5xl">Get in Touch</h2>
+      <p class="pt-4 text-2xl text-gray-300">
+        I'd love to hear from you!
+      </p>
+        <section id="form-container" class="flex gap-4 flex-wrap items-center">
+          <form id="contact-form" class="m-4 mt-7">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit" class="text-lg" />
+        </form>
+        <figure class="flex flex-col justify-center items-center m-4">
+            <img src="img/contact.png" alt="contact" class="max-h-full max-w-full">
+          </figure>
+        </section>
       </section>
     </main>
-    <footer class="h-14 min-w-full border-2 border-yellow-200"></footer>
+    <footer class="h-14 min-w-full border-2 border-yellow-200 flex justify-center items-center
+    ">
+        Apple
+    </footer>
   </body>
 </html>

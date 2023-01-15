@@ -4,114 +4,124 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root{
-    --font-family-header :'Noto Sans', sans-serif;
-    --font-family-hero : 'Montserrat', sans-serif;
-    --font-family-name : 'Ubuntu', sans-serif;
-    --font-family-about : 'PT Sans', sans-serif;
-    --background-purple : #5E42F6;
-    --button-background-color : #8fbaff;
-    --background: rgba(89, 0, 255, 0.553);
+--font-header :'Noto Sans', sans-serif;
+--font-hero : 'Montserrat', sans-serif;
+--font-name : 'Ubuntu', sans-serif;
+--font-about : 'PT Sans', sans-serif;
+--bg-purple : #5E42F6;
+--button-bg-color : #8fbaff;
+--bg: rgba(89, 0, 255, 0.553);
 }
 
 header{
-    font-family: var(--font-family-header);
-    min-height: 12vh;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    
+font-family: var(--font-header);
+min-height: 12vh;
+-webkit-backdrop-filter: blur(8px);
+backdrop-filter: blur(8px);
 }
 
 main{
-    margin: 0 auto;
-    margin-top: 3vh;
+margin: 0 auto;
+margin-top: 3vh;
 }
 
+footer{
+    min-height: 25vh;
+    background-color: #8C52FF;
+}
 
 #hero{
-    /* background-image: url("../img/wave.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom; */
-    min-height: 92vh;
-    font-family: var(--font-family-hero);
+min-height: 95vh;
+font-family: var(--font-hero);
 }
 
 #hero-wrap{
-    min-width: 65vw;
+min-width: 65vw;
 }
 
 #name{
-    font-family: var(--font-family-name);
+font-family: var(--font-name);
+background: linear-gradient(287deg, rgba(66,148,246,1) 6%, rgba(32,105,171,1) 50%, rgba(35,255,245,1) 99%);
+background-size: cover;
+-webkit-text-fill-color: transparent;
+background-clip:text;
+-webkit-background-clip: text;
 }
 
-
-#about-me{
-    min-height: 60vh;
-    
+#about-me, #tech-stack, #project-container {
+min-height: 60vh;
 }
 
-#about-me:nth-child(2){
-    font-family: var(--font-family-about);
-}
-#about-me-caption, #contact h2{
-    font-family: var(--font-family-name);
+#about-me:nth-child(2), #tech-stack p {
+font-family: var(--font-about);
 }
 
-#about-me button{
-    font-family: var(--font-family-name);
-    color: var(--button-background-color);
-    border-color: var(--button-background-colorx);
+#about-me-caption, #contact h2, #tech-stack-caption, #projects-heading {
+font-family: var(--font-name);
 }
 
-#tech-stack{
-    min-height: 70vh;
+#about-me button, #contactMe {
+font-family: var(--font-name);
+color: var(--button-bg-color);
+border-color: var(--button-bg-color);
 }
 
-#name{
-    background: rgb(66,148,246);
-    background: linear-gradient(287deg, rgba(66,148,246,1) 6%, rgba(32,105,171,1) 50%, rgba(35,255,245,1) 99%);
-    background-size: cover;
-    /* background-repeat: repeat; */
-    -webkit-text-fill-color: transparent;
-    background-clip:text;
-    -webkit-background-clip: text;
+#stacks :nth-child(n) {
+transform: scale(0.6);
 }
 
-#contactMe {
-    border: 2px solid var(--button-background-color);
-    font-family: var(--font-family-name);
-    color: var(--button-background-color);
-    border-radius: 28px;
+.project-card {
+width: max(250px, 20vw);
+aspect-ratio: 4/5;
+background-color: #373637;
+border-radius: 16px;
+box-shadow:1px 1px 5px rgb(96, 96, 96);
 }
 
-#tech-stack-caption{
-    font-weight: lighter;
-    font-family: var(--font-family-name);
+/* forms */
+/* Set font and background color for form */
+#contact-form {
+    font-family: var(--font-name);
+    /* background-color: var(--bg-purple); */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 30vw;
 }
 
-#tech-stack p{
-    font-family: var(--font-family-hero);
+#contact figure{
+    height: max(50vh, 300px);
+}
+/* Style for form labels */
+label {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
 }
 
-#stacks :nth-child(n){
-    transform: scale(0.6);
+/* Style for form input fields */
+input, textarea {
+    color:  black;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5f5f5;
 }
 
-
-#projects-heading{
-    font-family: var(--font-family-name);
+textarea{
+    min-height: 125px;
 }
 
-#project-container{
-    min-height: 50vh;
-    max-height: 100vh;
-    
-}
-
-.project-card{
-    width: max(250px, 20vw);
-    aspect-ratio: 4/5;
-    background-color: #373637;
+/* Style for submit button */
+input[type="submit"] {
+    width: 50%;
+    border:2px solid var(--button-bg-color);
+    color: var(--button-bg-color);
+    background: transparent;
+    /* padding: 12px 20px; */
     border-radius: 16px;
-    box-shadow:1px 1px 5px rgb(96, 96, 96);
+    cursor: pointer;
+    text-transform: uppercase;
 }
