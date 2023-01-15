@@ -1,71 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/output.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="./projects.js"></script>
     <title>Portfolio</title>
-</head>
-<body class="dark:bg-zinc-900 bg-white min-w-full text-white flex flex-col">
-    <header class="p-2 flex justify-center fixed min-w-full h-24 text-gray-300 text-lg z-10 top-0">
-        <div class="header-hero w-4/5 flex items-center justify-between">
-            <img id="logo" src="img/logo.jpg" alt="logo" class="block h-full"/>
-            <nav id="navbar" class="flex gap-8 text-xl">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Tech Stack</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
-            </nav>
-        </div>
+  </head>
+  <body class="flex min-w-full flex-col bg-white text-white dark:bg-zinc-900">
+    <header
+      class="fixed top-0 z-10 flex h-24 min-w-full justify-center p-2 text-lg text-gray-300"
+    >
+      <div class="header-hero flex w-4/5 items-center justify-between">
+        <img id="logo" src="img/logo.jpg" alt="logo" class="block h-full" />
+        <nav id="navbar" class="flex gap-8 text-xl">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Tech Stack</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </nav>
+      </div>
     </header>
-    <main class="min-h-screen flex flex-col min-w-full">
-        <section id="hero" class="min-w-full flex flex-col justify-center items-center">
-            <div id="hero-wrap" class="flex gap-16 justify-center">
-                <div id="intro" class="flex flex-col justify-min-[h]:40vh">
-                    <h2 class="text-4xl">Hi,</h1>
-                    <h2 class="text-4xl">My name is</h1>
-                    <h3 id="name" class="text-7xl pt-1 pb-1">Tanpreet Jolly</h1>
-                    <p class="text-5xl pt-3">I build things for web!</p>
-                    <button id="contactMe" class="h-14 w-60 text-center text-2xl p-2 mt-5 to-transparent">CONTACT ME</button>
-                </div>
-                <figure class="flex flex-col justify-center">
-                <img src="img/hero-img.png" alt="" srcset="" class="block max-w-xs">
-                </figure>
-            </div>
-        </section>
-        <section id="tech-stack" class="flex flex-col items-center min-[h]:70vh min-w-full"> 
-            <h1 class="text-5xl" id="tech-stack-caption">My Tech Stack</h1>
-            <p class="text-2xl text-gray-300 pt-5 ">Technologies I've been working with currently</p>
-            <div id="stacks" class="grid grid-rows-2 grid-flow-col w-3/4 p-5 place-content-center gap-x-9 z-0">
-                <img src="img/html.png" alt="">
-                <img src="img/css.png" alt="">
-                <img src="img/js.png" alt="">
-                <img src="img/tailwind.png" alt="">
-                <img src="img/git.png" alt="">
-                <img src="img/vs.png" alt="">
-                <img src="img/git-hub.png" alt="">
-                <img src="img/sass.png" alt="">
-            </div>
-        </section>
-        <section id="projects" class="flex flex-col gap-10  min-w-full min-h-screen p-5 items-center justify-center relative">
-            <div id="caption-projects" class="text-center z-10">
-            <p class="text-5xl" id="projects-heading">
-                My Projects
-            </p>
-            <p class="text-2xl text-gray-300">Things I've built so far</p>
+    <main class="flex min-h-screen min-w-full flex-col items-center">
+      <section
+        id="hero"
+        class="flex min-w-full flex-col items-center justify-center"
+      >
+        <div id="hero-wrap" class="flex justify-center gap-16">
+          <div id="intro" class="justify-min-[h]:40vh flex flex-col">
+            <h2 class="text-4xl">Hi,</h2>
+            <h2 class="text-4xl">My name is</h2>
+            <h3 id="name" class="pt-1 pb-1 text-7xl">Tanpreet Jolly</h3>
+            <p class="pt-3 text-5xl">I build things for web!</p>
+            <button
+              id="contactMe"
+              class="mt-5 h-14 w-60 to-transparent p-2 text-center text-2xl"
+            >
+              CONTACT ME
+            </button>
+          </div>
+          <figure class="flex flex-col justify-center">
+            <img
+              src="img/hero-img.png"
+              alt=""
+              srcset=""
+              class="block max-w-xs"
+            />
+          </figure>
         </div>
-            <div id="project-container" class="flex flex-wrap min-w-full justify-center gap-5">
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-            </div>
-        </section>
+      </section>
+      <section
+        id="about-me"
+        class="flex w-full flex-col items-center justify-center gap-8 p-8"
+      >
+        <div class="aboutCard min-h-full w-4/6">
+          <p class="text-5xl" id="about-me-caption">About Me</p>
+        </div>
+        <div class="aboutCard min-h-full w-4/6">
+          <p class="text-2xl text-gray-300">
+            Hello, my name is Tanpreet, a frontend development enthusiast based
+            out of New Delhi. I am currently a 2nd-year student pursuing
+            Computer Science at <span class="font-bold"></span>MAIT, Delhi</span>. I have been learning web
+            development for the past 3 months and have a strong understanding of
+            <span class="font-bold">HTML, CSS, JavaScript, and Tailwind CSS</span>. I have been working on
+            personal projects and have a passion for creating visually appealing
+            and user-friendly websites. I am eager to continue to learn and grow
+            as a developer and excited to bring my skills to any opportunity
+            that comes my way.
+          </p>
+        </div>
+        <div class="w-4/6">
+          <button
+            class="h-14 w-52 rounded-2xl border-2 border-blue-400 bg-transparent text-2xl text-blue-200"
+          >
+            CONTACT
+          </button>
+        </div>
+      </section>
+      <section
+        id="tech-stack"
+        class="mb-8 flex min-w-full flex-col items-center justify-center"
+      >
+        <h1 class="text-5xl" id="tech-stack-caption">My Tech Stack</h1>
+        <p class="pt-5 text-2xl text-gray-300">
+          Technologies I've been working with currently
+        </p>
+        <div
+          id="stacks"
+          class="z-0 grid w-3/4 grid-flow-col grid-rows-2 place-content-center gap-x-9 p-5"
+        >
+          <img src="img/html.png" alt="" />
+          <img src="img/css.png" alt="" />
+          <img src="img/js.png" alt="" />
+          <img src="img/tailwind.png" alt="" />
+          <img src="img/git.png" alt="" />
+          <img src="img/vs.png" alt="" />
+          <img src="img/git-hub.png" alt="" />
+          <img src="img/sass.png" alt="" />
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="relative flex min-h-screen min-w-full flex-col items-center justify-center gap-10 p-5"
+      >
+        <div id="caption-projects" class="text-center">
+          <p class="text-5xl" id="projects-heading">My Projects</p>
+          <p class="text-2xl text-gray-300">Things I've built so far</p>
+        </div>
+        <div
+          id="project-container"
+          class="mt-5 flex w-4/5 flex-wrap place-content-center justify-center gap-10"
+        >
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+        </div>
+      </section>
+      <section id="contact" class="border-2 border-red-400 min-w-full flex justify-center mt-24 p-6">
+        <h2 class="text-5xl">Contact Me</h2>
+        
+      </section>
     </main>
-    <footer class="border-yellow-200 border-2 min-w-full h-14"></footer>
-</body>
+    <footer class="h-14 min-w-full border-2 border-yellow-200"></footer>
+  </body>
 </html>

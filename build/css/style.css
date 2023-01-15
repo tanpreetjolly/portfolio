@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root{
     --font-family-header :'Noto Sans', sans-serif;
     --font-family-hero : 'Montserrat', sans-serif;
     --font-family-name : 'Ubuntu', sans-serif;
+    --font-family-about : 'PT Sans', sans-serif;
     --background-purple : #5E42F6;
     --button-background-color : #8fbaff;
     --background: rgba(89, 0, 255, 0.553);
@@ -42,10 +44,27 @@ main{
     font-family: var(--font-family-name);
 }
 
+
+#about-me{
+    min-height: 60vh;
+    
+}
+
+#about-me:nth-child(2){
+    font-family: var(--font-family-about);
+}
+#about-me-caption, #contact h2{
+    font-family: var(--font-family-name);
+}
+
+#about-me button{
+    font-family: var(--font-family-name);
+    color: var(--button-background-color);
+    border-color: var(--button-background-colorx);
+}
+
 #tech-stack{
-    /* background: var(--background-purple); */
-    min-height: 50vh;
-    /* margin-left: 2px; */
+    min-height: 70vh;
 }
 
 #name{
@@ -83,10 +102,16 @@ main{
     font-family: var(--font-family-name);
 }
 
-#project-container:nth-child(n){
-    border-radius: 5px;
+#project-container{
+    min-height: 50vh;
+    max-height: 100vh;
+    
 }
 
-#project-card{
-    
+.project-card{
+    width: max(250px, 20vw);
+    aspect-ratio: 4/5;
+    background-color: #373637;
+    border-radius: 16px;
+    box-shadow:1px 1px 5px rgb(96, 96, 96);
 }
