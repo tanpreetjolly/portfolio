@@ -8,9 +8,22 @@
 --font-hero : 'Montserrat', sans-serif;
 --font-name : 'Ubuntu', sans-serif;
 --font-about : 'PT Sans', sans-serif;
---bg-purple : #5E42F6;
+--bg-blue : #5087CE;
 --button-bg-color : #8fbaff;
 --bg: rgba(89, 0, 255, 0.553);
+}
+
+html{
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+aside{
+    min-height: 30vh;
+    max-width: 8vw;
+    background : #65656b1b;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 header{
@@ -26,12 +39,14 @@ margin-top: 3vh;
 }
 
 footer{
-    min-height: 25vh;
-    background-color: #8C52FF;
+    border-top: 3px solid #5c5c5c50;
+    min-height: 15vh;
+    
 }
 
 #hero{
-min-height: 95vh;
+padding-top: 6rem;
+min-height: 80vh;
 font-family: var(--font-hero);
 }
 
@@ -48,10 +63,21 @@ background-clip:text;
 -webkit-background-clip: text;
 }
 
-#about-me, #tech-stack, #project-container {
-min-height: 60vh;
+#about-me,  #project-container {
+min-height: 80vh;
 }
 
+#tech-stack{
+    min-height: 75vh;
+}
+
+#contact {
+    min-height: 90vh;
+}
+
+#projects{
+    min-height: 125vh;
+}
 #about-me:nth-child(2), #tech-stack p {
 font-family: var(--font-about);
 }
@@ -66,6 +92,14 @@ color: var(--button-bg-color);
 border-color: var(--button-bg-color);
 }
 
+#about-me button:hover, #contactMe:hover{
+    background: var(--bg-blue);
+    border: none;
+    color:  white;
+    transform: scale(1.03);
+    transition: all 0.2s linear;
+    text-shadow: 0.5px 0.5px 5px #373637;
+}
 #stacks :nth-child(n) {
 transform: scale(0.6);
 }
@@ -82,7 +116,7 @@ box-shadow:1px 1px 5px rgb(96, 96, 96);
 /* Set font and background color for form */
 #contact-form {
     font-family: var(--font-name);
-    /* background-color: var(--bg-purple); */
+    /* background-color: var(--bg-blue); */
     padding: 20px;
     border-radius: 10px;
     min-width: 30vw;
