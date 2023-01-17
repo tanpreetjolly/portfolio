@@ -45,7 +45,6 @@ footer{
 }
 
 #hero{
-padding-top: 6rem;
 min-height: 80vh;
 font-family: var(--font-hero);
 }
@@ -92,7 +91,7 @@ color: var(--button-bg-color);
 border-color: var(--button-bg-color);
 }
 
-#about-me button:hover, #contactMe:hover{
+#about-me button:hover, #contactMe:hover, input[type="submit"]:hover{
     background: var(--bg-blue);
     border: none;
     color:  white;
@@ -101,7 +100,9 @@ border-color: var(--button-bg-color);
     text-shadow: 0.5px 0.5px 5px #373637;
 }
 #stacks :nth-child(n) {
-transform: scale(0.6);
+min-height: 32px;
+padding-bottom: 10px;
+min-width: 32px;
 }
 
 .project-card {
@@ -159,3 +160,4 @@ input[type="submit"] {
     cursor: pointer;
     text-transform: uppercase;
 }
+
