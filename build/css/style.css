@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
 --font-header :'Noto Sans', sans-serif;
 --font-hero : 'Montserrat', sans-serif;
 --font-name : 'Ubuntu', sans-serif;
 --font-about : 'PT Sans', sans-serif;
+--font-menu: 'Roboto', sans-serif;
 --bg-blue : #5087CE;
 --button-bg-color : #8fbaff;
 --bg: rgba(89, 0, 255, 0.553);
@@ -43,7 +45,23 @@ footer{
     min-height: 15vh;
     
 }
+#dropdownMenu{
+    min-height: 80vh;
+    min-width: 70vw;
+    background-color: #1b1b1b;
+    animation-duration: 0.5s;
+}
+#dropdownMenu li{
+    font-weight: 900;
+    width: 100%;
+    font-family: var(--font-menu);
+    padding: 2.5rem;
+    text-align: center;
+}
 
+#dropdownMenu li:active{
+    color: #8fbaff;
+}
 #hero{
 min-height: 80vh;
 font-family: var(--font-hero);

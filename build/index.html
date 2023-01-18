@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script defer src="./projects.js"></script>
+    <script defer src="menu.js"></script>
     <title>Portfolio</title>
   </head>
   <body
@@ -28,8 +28,8 @@
       class="fixed top-0 z-10 flex h-20 sm:h-24 min-w-full justify-center p-2 text-lg text-gray-300"
     >
       <div class="header-hero flex w-4/5 items-center justify-between">
-        <img id="logo" src="img/logo.jpg" alt="logo" class="block h-full" />
-        <img id="menu" src="img/menu.svg" alt="menu" class="block h-1/2 lg:hidden">
+        <img id="logo" src="img/logo.jpg" alt="logo" class="block h-full"/>
+        <img id="menu" src="img/menu.svg" alt="menu" class="block h-1/2 lg:hidden hover:cursor-pointer">
         <nav id="navbar" class="lg:flex gap-8 text-xl hidden">
           <a href="index.html" class="hover:text-blue-300 hover:scale-x-105 transition-all duration-300 hover:ease-in-out">Home</a>
           <a href="#about-me" class="hover:text-blue-300 hover:scale-105 transition-all duration-300  hover:ease-in-out">About</a>
@@ -37,6 +37,22 @@
           <a href="#projects" class="hover:text-blue-300 hover:scale-105 transition-all duration-300  hover:ease-in-out">Projects</a>
           <a href="#contact" class="hover:text-blue-300 hover:scale-105 transition-all duration-300  hover:ease-in-out">Contact</a>
         </nav>
+      </div>
+      <div id="dropdownMenu" class="z-20 fixed h-screen w-full top-20  left-0 items-center flex-col text-3xl lg:hidden animate_animated  animate__slideInDown hidden">
+        <ul id="links" class="w-4/5 toggle-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="flex min-h-screen min-w-full flex-col items-center">
