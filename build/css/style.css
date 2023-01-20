@@ -50,6 +50,7 @@ footer{
     min-width: 70vw;
     background-color: #1b1b1b;
     animation-duration: 0.5s;
+    margin-top: 12vh;
 }
 #dropdownMenu li{
     font-weight: 900;
@@ -57,8 +58,11 @@ footer{
     font-family: var(--font-menu);
     padding: 2.5rem;
     text-align: center;
+    
 }
-
+#dropdownMenu li a{
+    display: block;
+}
 #dropdownMenu li:active{
     color: #8fbaff;
 }
@@ -118,19 +122,42 @@ border-color: var(--button-bg-color);
     text-shadow: 0.5px 0.5px 5px #373637;
 }
 #stacks :nth-child(n) {
-min-height: 32px;
+min-height: 40px;
 padding-bottom: 10px;
-min-width: 32px;
+min-width: 40px;
 }
 
 .project-card {
-width: max(250px, 20vw);
-aspect-ratio: 4/5;
+width: max(300px, 24vw);
+/* overflow-y: scroll; */
+aspect-ratio: 3/4;
 background-color: #373637;
 border-radius: 16px;
 box-shadow:1px 1px 5px rgb(96, 96, 96);
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+padding: 5px;
+font-family: var(--font-hero);
+transform: scale(1..05);
 }
 
+.project-card img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    aspect-ratio: 1.2;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+
+.projectLinkContainer img{
+    max-width: 30px;
+    aspect-ratio: 1;
+}
 /* forms */
 /* Set font and background color for form */
 #contact-form {
