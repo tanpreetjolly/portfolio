@@ -35,7 +35,7 @@ const projectList = [
         img: "./img/surveyform-thumbnail.jpg",
         githubLink: "",
         live: "",
-        desc: "A replica survey form of the freeCodeCamp survey from designed using HTML5 and CSS3."
+        desc: "A replica survey form of the freeCodeCamp survey  designed using HTML5 and CSS3."
     },
     {
         id: 3,
@@ -61,14 +61,14 @@ const projectContainer = document.getElementById("project-container");
 function displayAllProjects(projectsList){
     let displayProjects = projectsList.map(function(item){
         return `
-        <div class="project-card">
+        <div class="project-card" class="text-gray-300">
             <img src= ${item.img} alt=${item.title}>
-            <h2 class="text-2xl  font-bold mx-3 pt-1">${item.title}</h2>
+            <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
             <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
-              <a href=${item.live}><p class="text-lg">View Project</p></a>
-              <a href="${item.githubLink}"><img src="img/footer-github.png" alt=""></a>
+              <a href=${item.live}><p class="text-sm lg:text-lg">View Project</p></a>
+              <a href="${item.githubLink}"><img src="img/footer-github.png" alt="github-link"></a>
             </div>
-            <p class="m-1 w-4/5">${item.desc}</p>
+            <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
         </div>`
 
     });

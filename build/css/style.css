@@ -123,13 +123,13 @@ border-color: var(--button-bg-color);
 }
 #stacks :nth-child(n) {
 min-height: 40px;
+max-height: 110px;
 padding-bottom: 10px;
 min-width: 40px;
 }
 
 .project-card {
 width: max(300px, 24vw);
-/* overflow-y: scroll; */
 aspect-ratio: 3/4;
 background-color: #373637;
 border-radius: 16px;
@@ -140,7 +140,10 @@ flex-direction: column;
 align-items: center;
 padding: 5px;
 font-family: var(--font-hero);
-transform: scale(1..05);
+}
+.project-card:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 
 .project-card img{
@@ -152,8 +155,14 @@ transform: scale(1..05);
     object-position: top;
 
 }
+.project-card div{
+    border-bottom: gray;
+}
 
-
+.project-card a:hover{
+    color: var(--button-bg-color);
+    transition: all 0.2s linear;
+}
 .projectLinkContainer img{
     max-width: 30px;
     aspect-ratio: 1;
