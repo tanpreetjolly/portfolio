@@ -25,32 +25,32 @@ const projectList = [
         id: 1,
         title: "Tribute Page",
         img: "./img/tribute-thumbnail.jpg",
-        githubLink: "",
-        live: "",
+        githubLink: "https://github.com/tanpreetjolly/fcc-project-tributePage",
+        live: "https://tributepage-tanpreet.netlify.app/",
         desc: "A tribute page for the freeCodeCamp RWD Certification. Created using HTML5 and CSS3.",
     },
     {
         id: 2,
         title: "Survey Form",
         img: "./img/surveyform-thumbnail.jpg",
-        githubLink: "",
-        live: "",
+        githubLink: "https://github.com/tanpreetjolly/fcc-project-surveyForm",
+        live: "https://surveyform-tanpreet.netlify.app/",
         desc: "A replica survey form of the freeCodeCamp survey  designed using HTML5 and CSS3."
     },
     {
         id: 3,
         title: "Landing Page",
         img: "./img/landingpage-thumbnail.jpg",
-        githubLink: "",
-        live: "",
+        githubLink: "https://github.com/tanpreetjolly/fcc-project-landingPage",
+        live: "https://landingpage-tanpreet.netlify.app/",
         desc: "A simple static landing page for a business that deals in handcrafted objects."
     },
     {
         id: 4,
         title: "Portfolio Website",
         img: "./img/portfolio-thumbnail.jpg",
-        githubLink: "",
-        live: "",
+        githubLink: "https://github.com/tanpreetjolly/portfolio/tree/master ",
+        live: "https://portfolio-tanpreet.netlify.app/",
         desc: "A personal portfolio created using HTML5, CSS3 and JavaScript showcasing my work."
     },
 ]
@@ -65,8 +65,8 @@ function displayAllProjects(projectsList){
             <img src= ${item.img} alt=${item.title}>
             <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
             <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
-              <a href=${item.live}><p class="text-sm lg:text-lg">View Project</p></a>
-              <a href="${item.githubLink}"><img src="img/footer-github.png" alt="github-link"></a>
+              <a href=${item.live} target="_blank"><p class="text-sm lg:text-lg">View Project</p></a>
+              <a href="${item.githubLink}" target="_blank"><img src="img/footer-github.png" alt="github-link""></a>
             </div>
             <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
         </div>`

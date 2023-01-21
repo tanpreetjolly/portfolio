@@ -113,7 +113,7 @@ color: var(--button-bg-color);
 border-color: var(--button-bg-color);
 }
 
-#about-me button:hover, #contactMe:hover, input[type="submit"]:hover{
+#about-me button:hover, #contactMe:hover, #email-form button:hover{
     background: var(--bg-blue);
     border: none;
     color:  white;
@@ -155,9 +155,6 @@ font-family: var(--font-hero);
     object-position: top;
 
 }
-.project-card div{
-    border-bottom: gray;
-}
 
 .project-card a:hover{
     color: var(--button-bg-color);
@@ -169,7 +166,7 @@ font-family: var(--font-hero);
 }
 /* forms */
 /* Set font and background color for form */
-#contact-form {
+#email-form {
     font-family: var(--font-name);
     /* background-color: var(--bg-blue); */
     padding: 20px;
@@ -204,7 +201,8 @@ textarea{
 }
 
 /* Style for submit button */
-input[type="submit"] {
+#email-form button {
+    height: 45px;
     width: 50%;
     border:2px solid var(--button-bg-color);
     color: var(--button-bg-color);

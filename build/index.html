@@ -11,7 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script defer src="js/menu.js"></script>
-    <title>Portfolio</title>
+    <script defer src="js/email.js"></script>
+    <title>Welcome</title>
   </head>
   <body
     class="flex min-w-full flex-col items-center bg-white text-white dark:bg-zinc-900"
@@ -24,29 +25,34 @@
         <a
           href="https://www.linkedin.com/in/tanpreet-singh-jolly-b564a8232"
           target="_blank"
-          ><img
+        >
+          <img
             src="img/linkedin.png"
             alt="linked"
             class="h-auto w-8 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all"
-        /></a>
-        <a href="https://twitter.com/JollyTanpreet" target="_blank"
-          ><img
+          />
+        </a>
+        <a href="https://twitter.com/JollyTanpreet" target="_blank">
+          <img
             src="img/twitter.png"
             alt="twitter"
             class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-cyan-600 hover:transition-all"
-        /></a>
-        <a href="https://github.com/tanpreetjolly" target="_blank"
-          ><img
+          />
+        </a>
+        <a href="https://github.com/tanpreetjolly" target="_blank">
+          <img
             src="img/footer-github.png"
             alt="github"
-            class="h-auto w-8 cursor-pointer rounded-full from-purple-500 duration-300 hover:scale-110 hover:bg-gradient-to-bl hover:transition-all"
-        /></a>
-        <a href="mailto:tanpreet2002@gmailcom" target="_blank"
-          ><img
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all"
+          />
+        </a>
+        <a href="mailto:tanpreet2002@gmailcom" target="_blank">
+          <img
             src="img/mail.png"
             alt="mail"
             class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all"
-        /></a>
+          />
+        </a>
       </div>
     </aside>
     <header
@@ -64,28 +70,28 @@
           <a
             href="index.html"
             class="transition-all duration-300 hover:scale-x-105 hover:text-blue-300 hover:ease-in-out"
-            >Home</a
-          >
+            >Home
+          </a>
           <a
             href="#about-me"
             class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
-            >About</a
-          >
+            >About
+          </a>
           <a
             href="#tech-stack"
             class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
-            >Tech Stack</a
-          >
+            >Tech Stack
+          </a>
           <a
             href="#projects"
             class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
-            >Projects</a
-          >
+            >Projects
+          </a>
           <a
             href="#contact"
             class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
-            >Contact</a
-          >
+            >Contact
+          </a>
         </nav>
       </div>
       <div
@@ -168,11 +174,13 @@
             Hello, my name is Tanpreet Singh Jolly, an aspiring frontend
             developer based out of New Delhi. I am currently a 2nd-year student
             pursuing Computer Science at
-            <span class="font-bold">MAIT, Delhi</span>. I have been learning web
-            development for the past 3 months and have a strong understanding of
+            <span class="font-bold">MAIT, Delhi</span>
+            . I have been learning web development for the past 3 months and
+            have a strong understanding of
             <span class="font-bold"
-              >HTML, CSS, JavaScript, and Tailwind CSS</span
-            >. I have been working on personal projects and have a passion for
+              >HTML, CSS, JavaScript, and Tailwind CSS
+            </span>
+            . I have been working on personal projects and have a passion for
             creating visually appealing and user-friendly websites. I am eager
             to continue to learn and grow as a developer and excited to bring my
             skills to any opportunity that comes my way.
@@ -182,7 +190,7 @@
           <button
             class="mx-auto h-10 w-40 rounded-2xl border-2 border-blue-400 bg-transparent text-lg text-blue-200 sm:h-14 sm:w-52 sm:text-2xl"
           >
-          <a href="#contact">CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </button>
         </div>
       </section>
@@ -264,8 +272,12 @@
             <div
               class="projectLinkContainer flex w-full items-center justify-between px-4"
             >
-              <a href=""><p class="underline">View Project</p></a>
-              <a href=""><img src="img/footer-github.png" alt="" /></a>
+              <a href="">
+                <p class="underline">View Project</p>
+              </a>
+              <a href="">
+                <img src="img/footer-github.png" alt="" />
+              </a>
             </div>
             <p class="text- m-1 w-4/5 text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum
@@ -286,19 +298,21 @@
           id="form-container"
           class="flex flex-wrap items-center justify-center xl:gap-4"
         >
-          <form id="contact-form" class="m-4 mt-7">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Submit" class="text-lg" />
-          </form>
-          <figure class="m-4  flex-col items-center justify-center hidden lg:flex">
+        <form id="email-form">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="button" id="submit-btn" class="items-center justify-center">Submit</button>
+        </form>
+          <figure
+            class="m-4 hidden flex-col items-center justify-center lg:flex"
+          >
             <img
               src="img/contact.png"
               alt="contact"
@@ -306,7 +320,11 @@
             />
           </figure>
         </section>
-        <img src="img/my-socials.png" alt="my-socials" class="mx-auto block lg:hidden">
+        <img
+          src="img/my-socials.png"
+          alt="my-socials"
+          class="mx-auto block lg:hidden h-72"
+        />
       </section>
     </main>
     <footer
@@ -314,16 +332,24 @@
     >
       <p class="hidden sm:inline">tanpreet2002@gmail.com</p>
       <div id="footer-img-wrap" class="flex gap-2">
-        <a href="https://github.com/tanpreetjolly" target="_blank"
-          ><img src="img/footer-github.png" alt="github" class="h-9 w-9"
-        /></a>
-        <a href="mailto:tanpreet2002@gmailcom" target="_blank"
-          ><img src="img/linkedin.png" alt="linkedin" class="h-9 w-9"
-        /></a>
-        <a href="https://twitter.com/JollyTanpreet" target="_blank"
-          ><img src="img/twitter.png" alt="twitter" class="h-9 w-9"
-        /></a>
+        <a href="https://github.com/tanpreetjolly" target="_blank">
+          <img src="img/footer-github.png" alt="github" class="h-9 w-9" />
+        </a>
+        <a href="mailto:tanpreet2002@gmailcom" target="_blank">
+          <img src="img/linkedin.png" alt="linkedin" class="h-9 w-9" />
+        </a>
+        <a href="https://twitter.com/JollyTanpreet" target="_blank">
+          <img src="img/twitter.png" alt="twitter" class="h-9 w-9" />
+        </a>
       </div>
     </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("9-9D0S522SqIcmLbr");
+      })();
+    </script>
   </body>
 </html>
