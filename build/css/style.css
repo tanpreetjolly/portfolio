@@ -20,6 +20,9 @@ html{
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
 aside{
     min-height: 30vh;
     max-width: 8vw;
