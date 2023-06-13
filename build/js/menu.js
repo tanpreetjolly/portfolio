@@ -22,6 +22,22 @@ function menuToggle(params) {
 
 const projectList = [
     {
+        id: 5,
+        title: "Medware - Healthcare Companion",
+        img: "build/img/medware.png",
+        githubLink: "https://github.com/tanpreetjolly/Medware",
+        live: "https://medware.live",
+        desc: "A Healthcare Website consisting of a Disease Predictor made in React, Django, Tailwind and Machine Learning."
+    },
+    {
+        id: 6,
+        title: "Grocery App",
+        img: "build/img/grocery.png",
+        githubLink: "https://github.com/tanpreetjolly/groceryListApp",
+        live: "https://groceryapp-tanpreet.netlify.app/",
+        desc: "A grocery list app build in React to add or remove tems for grocery shopping"
+    },
+    {
         id: 1,
         title: "Tribute Page",
         img: "build/img/tribute-thumbnail.jpg",
@@ -53,6 +69,7 @@ const projectList = [
         live: "https://portfolio-tanpreet.netlify.app/",
         desc: "A personal portfolio created using HTML5, CSS3 and JavaScript showcasing my work."
     },
+    
 ]
 
 // function to return project-card
