@@ -1,7 +1,7 @@
 # Portfolio Website
 
 ## Live Demo
-The website can be viewed live at https://portfolio-tanpreet.netlify.app/
+The website can be viewed live at https://tanpreetsingh.netlify.app/
 
 A personal portfolio website created using HTML5, CSS3, JavaScript, and Tailwind CSS.
 
