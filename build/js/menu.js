@@ -21,56 +21,71 @@ function menuToggle(params) {
 //Projects Lists
 
 const projectList = [
-    {
-        id: 5,
-        title: "Medware - Healthcare Companion",
-        img: "build/img/medware.png",
-        githubLink: "https://github.com/tanpreetjolly/Medware",
-        live: "https://medware.live",
-        desc: "A Healthcare Website consisting of a Disease Predictor made in React, Django, Tailwind and Machine Learning."
-    },
-    {
-        id: 6,
-        title: "Grocery App",
-        img: "build/img/grocery.png",
-        githubLink: "https://github.com/tanpreetjolly/groceryListApp",
-        live: "https://groceryapp-tanpreet.netlify.app/",
-        desc: "A grocery list app build in React to add or remove tems for grocery shopping"
-    },
-    {
-        id: 1,
-        title: "Tribute Page",
-        img: "build/img/tribute-thumbnail.jpg",
-        githubLink: "https://github.com/tanpreetjolly/fcc-project-tributePage",
-        live: "https://tributepage-tanpreet.netlify.app/",
-        desc: "A tribute page for the freeCodeCamp RWD Certification. Created using HTML5 and CSS3.",
-    },
-    {
-        id: 2,
-        title: "Survey Form",
-        img: "build/img/surveyform-thumbnail.jpg",
-        githubLink: "https://github.com/tanpreetjolly/fcc-project-surveyForm",
-        live: "https://surveyform-tanpreet.netlify.app/",
-        desc: "A replica survey form of the freeCodeCamp survey  designed using HTML5 and CSS3."
-    },
-    {
-        id: 3,
-        title: "Landing Page",
-        img: "build/img/landingpage-thumbnail.jpg",
-        githubLink: "https://github.com/tanpreetjolly/fcc-project-landingPage",
-        live: "https://landingpage-tanpreet.netlify.app/",
-        desc: "A simple static landing page for a business that deals in handcrafted objects."
-    },
-    {
-        id: 4,
-        title: "Portfolio Website",
-        img: "build/img/portfolio-thumbnail.jpg",
-        githubLink: "https://github.com/tanpreetjolly/portfolio/tree/master ",
-        live: "https://portfolio-tanpreet.netlify.app/",
-        desc: "A personal portfolio created using HTML5, CSS3 and JavaScript showcasing my work."
-    },
-    
-]
+  {
+    id: 5,
+    title: "Medware - Healthcare Companion",
+    img: "build/img/medware.png",
+    githubLink: "https://github.com/tanpreetjolly/Medware",
+    live: "https://medware.live",
+    desc: "A Healthcare Website consisting of a Disease Predictor made in React, Django, Tailwind and Machine Learning.",
+  },
+  {
+    id: 8,
+    title: "Swift Chat App",
+    img: "build/img/chatapp.png",
+    githubLink: "https://github.com/tanpreetjolly/swift-chat-app",
+    live: "https://swifty-chatty-appy.onrender.com/",
+    desc: "A chatapp built with WebSocket API and ws lib. MERN Stack with TailwindCSS. Feat inlcudes realtime msg exchange and user authentication with email verification.",
+  },
+  {
+    id: 7,
+    title: "Ebazar Online Store",
+    img: "build/img/ebazar.png",
+    githubLink: "https://github.com/tanpreetjolly/eBazaar",
+    live: "https://ebazardeploy.onrender.com",
+    desc: "Simple E-commerce website made in React, Redux, Firebase and Stripe for payment gateway.",
+  },
+  {
+    id: 6,
+    title: "Grocery App",
+    img: "build/img/grocery.png",
+    githubLink: "https://github.com/tanpreetjolly/groceryListApp",
+    live: "https://groceryapp-tanpreet.netlify.app/",
+    desc: "A grocery list app build in React to add or remove tems for grocery shopping",
+  },
+  {
+    id: 1,
+    title: "Tribute Page",
+    img: "build/img/tribute-thumbnail.jpg",
+    githubLink: "https://github.com/tanpreetjolly/fcc-project-tributePage",
+    live: "https://tributepage-tanpreet.netlify.app/",
+    desc: "A tribute page for the freeCodeCamp RWD Certification. Created using HTML5 and CSS3.",
+  },
+  {
+    id: 2,
+    title: "Survey Form",
+    img: "build/img/surveyform-thumbnail.jpg",
+    githubLink: "https://github.com/tanpreetjolly/fcc-project-surveyForm",
+    live: "https://surveyform-tanpreet.netlify.app/",
+    desc: "A replica survey form of the freeCodeCamp survey  designed using HTML5 and CSS3.",
+  },
+  {
+    id: 3,
+    title: "Landing Page",
+    img: "build/img/landingpage-thumbnail.jpg",
+    githubLink: "https://github.com/tanpreetjolly/fcc-project-landingPage",
+    live: "https://landingpage-tanpreet.netlify.app/",
+    desc: "A simple static landing page for a business that deals in handcrafted objects.",
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    img: "build/img/portfolio-thumbnail.jpg",
+    githubLink: "https://github.com/tanpreetjolly/portfolio/tree/master ",
+    live: "https://portfolio-tanpreet.netlify.app/",
+    desc: "A personal portfolio created using HTML5, CSS3 and JavaScript showcasing my work.",
+  },
+];
 
 // function to return project-card
 const projectContainer = document.getElementById("project-container");
