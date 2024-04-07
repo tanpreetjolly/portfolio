@@ -38,6 +38,23 @@ const projectList = [
     desc: "A chatapp built with WebSocket API and ws lib. MERN Stack with TailwindCSS. Feat inlcudes realtime msg exchange and user authentication with email verification.",
   },
   {
+    id: 9,
+    title: "Vetmedman",
+    img: "https://i.imgur.com/aAFZsbY.png",
+    githubLink: "",
+    live: "https://vetmedman.com",
+    desc: "A shopping store I created for a freelance client. GithubRepo not available for this private project",
+   
+   },
+    {
+    id: 3,
+    title: "Landing Page - Freelance",
+    img: "https://i.imgur.com/cAzrTyh.png",
+    githubLink: "",
+    live: "https://genci-io.vercel.app",
+    desc: "A simple static landing page for a startup I worked at that. Github Repo not avaailable as per the company's terms",
+  },
+  {
     id: 7,
     title: "Ebazar Online Store",
     img: "build/img/ebazar.png",
@@ -68,14 +85,6 @@ const projectList = [
     githubLink: "https://github.com/tanpreetjolly/fcc-project-surveyForm",
     live: "https://surveyform-tanpreet.netlify.app/",
     desc: "A replica survey form of the freeCodeCamp survey  designed using HTML5 and CSS3.",
-  },
-  {
-    id: 3,
-    title: "Landing Page",
-    img: "build/img/landingpage-thumbnail.jpg",
-    githubLink: "https://github.com/tanpreetjolly/fcc-project-landingPage",
-    live: "https://landingpage-tanpreet.netlify.app/",
-    desc: "A simple static landing page for a business that deals in handcrafted objects.",
   },
   {
     id: 4,
